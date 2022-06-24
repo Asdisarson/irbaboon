@@ -1,0 +1,30 @@
+{
+  "name": "irbaboon2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asdisarson/irbaboon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asdisarson/irbaboon/issues"
+  },
+  "homepage": "https://github.com/Asdisarson/irbaboon#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "express-rest": "^1.0.4",
+    "express-winston": "^4.2.0",
+    "node-dev": "^7.4.3",
+    "qs": "^6.10.5",
+    "request": "^2.88.2",
+    "simple-json-db": "^2.0.0",
+    "winston": "^3.8.0"
+  }
+}
