@@ -4,7 +4,7 @@ var winston = require('winston'),
     expressWinston = require('express-winston');
 var app = express();
 var rest = expressRest(app);
-var travia = require('./inc/travia/index.js');
+var travia = require('./travia/index.js');
 app.use(expressWinston.logger({
     transports: [
         new winston.transports.Console()
@@ -20,11 +20,9 @@ app.use(expressWinston.logger({
     ignoreRoute: function (req, res) { return false; } // optional: allows to skip some log messages based on request and/or response
 }));
 
-travia();
 
 rest.get('/api/food', function(req, rest) {
-    travia();
-    rest.ok();
+    rest.ok(travia());
 });
 
 rest.get('/api/food/:id', function(req, rest) {
@@ -46,4 +44,4 @@ rest.delete('/api/food/:id', function(req, rest) {
     rest.gone();
 })
 
-app.listen();
+app.listen(3000);
