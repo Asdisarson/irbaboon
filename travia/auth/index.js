@@ -8,10 +8,10 @@ module.exports = {
        return axios(config)
             .then(function (response) {
                 var db = new JSONdb('travia/auth/credientials/token.json');
-
+                console.log(response.data);
                 db.JSON(response.data);
                 db.sync();
-                return true;
+                return response.data;
             })
             .catch(function (error) {
                 console.log(error);

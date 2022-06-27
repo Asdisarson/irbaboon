@@ -1,7 +1,7 @@
-
-var axios = require('axios');
 var JSONdb = require('simple-json-db');
-
+var axios = require(
+    'axios'
+)
 
 module.exports = {
     getListOfPropertiesForTravelAgentById: function (id) {
